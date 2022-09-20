@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body {
+    
+    font: normal 300 0.8em arial, sans-serif;
+
+    background-color: rgba(177, 138, 214, 0.685);
+    background-attachment: fixed;
+    text-align: justify;
+    
+
+}
+
+main {
+
+    
+    background-color: rgb(245, 245, 238);
+    padding: 50px;
+    width: 450px;
+    height: 800px;
+    border-radius: 5px;
+    display: inline-block;
+    
+    
+    
+
+
+}
+
+main#principal {
+
+    
+    background-color: rgb(245, 245, 238);
+    padding: 50px;
+    width: 450px;
+    height: 800px;
+    border-radius: 5px;
+    
+    
+ 
+}
+
+.basico {
+
+    color: rgb(126, 126, 100);
+}
+
+.basicod {
+
+    color: rgb(59, 185, 0);
+}
+
+.avancado {
+
+    color: rgb(216, 25, 19);
+}
+
+.avancadod {
+
+    color: rgb(4, 0, 255);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Modificando o tamanho das Imagens</h1>
+<p>Cada imagem deve seguir o tamanho do dispositivo ao qual ela foi aberta </p>
+
+<picture>
+
+
+  
+<source media="(max-width: 750px)" srcset="imagens/flamengo-P.png" type="image/png">
+<source media="(max-width: 1050px )" srcset="imagens/flamengo-M.png" type="image/png">
+<img src="imagens/flamengo-G.png" alt="Imagem flexcivel">    
+</picture>
+
+<h1>Reproduzindo áudio no site</h1>
+
+<p>Aqui vamos reproduzir alguns áudios no nosso site</p>
+
+<audio preload="metadata" controls autoplay>
+  <source src="midia/musica.mp3" type="audio/mpeg">
+
+
+</audio>
+
+</body>
+</html>
