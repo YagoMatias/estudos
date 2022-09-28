@@ -82,21 +82,27 @@ nav a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 10px;
+  background-color: #edd7ad;
 }
 
 .qsomosimg {
   background-image: url(imagens/qsomos2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  
+  width: 600px;
+  height: 435px;
 }
 
 .qsomoscx {
-  display: block;
-  margin: 10px;
-  width: 800px;
-  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 500px;
+  max-width: 500px;
+  height: 300px;
+  padding: 50px;
 }
 
 .servicos {
