@@ -1,9 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -77,38 +79,24 @@ nav a {
 
 .qsomosbg {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  background-color: #f5deb2;
-  margin-top: 20px;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 .qsomosimg {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
+  background-image: url(imagens/qsomos2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
 .qsomoscx {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  padding: 15px;
-  width: 350px;
-  min-height: 350px;
-}
-
-.qsomoscx h2 {
-  text-align: center;
-  font-size: 3rem;
-  margin: auto;
-}
-
-.qsomoscx p {
-  font-size: 1.2em;
-  text-align: justify;
-  text-indent: 1.5em;
-  margin-top: 10px;
+  display: block;
+  margin: 10px;
+  width: 800px;
+  height: 100px;
 }
 
 .servicos {
@@ -197,25 +185,21 @@ nav a {
 
 .contatos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
   justify-items: center;
   align-items: baseline;
 }
 
-.contatos img {
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
+.ctt-infos a {
+  display: none !important;
+  font-style: none;
+  text-decoration: none;
+  color: black;
 }
 
-.ctt-infos {
-  display: flex;
-  flex-direction: column;
-  gap: 70px;
-}
-
-.ctt-infos > a {
-  margin-left: -70px;
+.ctt-infos a.ativo {
+  display: block !important;
   font-style: none;
   text-decoration: none;
   color: black;
