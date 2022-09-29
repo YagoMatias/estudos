@@ -116,7 +116,7 @@ a.btninicio:hover {
   background-size: auto;
   /* opacity: 30%; */
   height: 600px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   margin-top: 150px;
 }
 
@@ -124,7 +124,8 @@ a.btninicio:hover {
   /* border: 1px solid aqua; */
 }
 
-.lscx {
+.lscx,
+.sampcx {
   display: grid;
   margin: auto;
   align-items: flex-start;
@@ -132,9 +133,19 @@ a.btninicio:hover {
   /* border: 1px solid purple; */
 }
 
-.lscx p {
+.lscx,
+.sampcx p {
   margin-bottom: 50px;
   color: white;
   font-size: 1.3rem;
   /* border: 1px solid white; */
+}
+.sampbg {
+  background-image: url(imagens/sampbg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  height: 600px;
+  margin-bottom: 50px;
+  margin-top: 150px;
 }
