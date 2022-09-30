@@ -41,11 +41,11 @@ a {
   flex-wrap: wrap;
 }
 
-a:hover {
+li a:hover {
   border-bottom: 2px solid white;
 }
 
-a:focus {
+li a:focus {
   border-bottom: 2px solid white;
 }
 
@@ -116,7 +116,6 @@ a.btninicio:hover {
   background-size: auto;
   /* opacity: 30%; */
   height: 600px;
-  margin-bottom: 50px;
   margin-top: 150px;
 }
 
@@ -135,6 +134,7 @@ a.btninicio:hover {
 
 .lscx,
 .sampcx p {
+  margin-top: 35px;
   margin-bottom: 50px;
   color: white;
   font-size: 1.3rem;
@@ -146,6 +146,34 @@ a.btninicio:hover {
   background-position: center center;
   background-size: auto;
   height: 600px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   margin-top: 150px;
+}
+
+a.arrow {
+  text-decoration: none;
+  font-style: none;
+}
+
+.arrow {
+  display: block;
+  background-image: url(imagens/arrow1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: -20px;
+  max-width: 100vw;
+  animation: animate 1.5s linear infinite;
+
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0;
+  }
 }
