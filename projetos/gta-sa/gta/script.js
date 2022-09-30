@@ -1,5 +1,5 @@
 function scrollNav() {
-  const menu = document.querySelectorAll('.js-menu a[href^="#"');
+  const arrow = document.querySelectorAll('a[href^="#"');
 
   function scrollLink(event) {
     event.preventDefault();
@@ -11,24 +11,28 @@ function scrollNav() {
     });
   }
 
-  menu.forEach((link) => {
+  arrow.forEach((link) => {
     link.addEventListener("click", scrollLink);
   });
 }
 scrollNav();
 
-const arrow = document.querySelectorAll('a[href^="#"');
+function activeAnimateScroll() {
+  const animateScroll = document.querySelectorAll(".js-scroll");
+  const tamanhoWindow = window.innerHeight * 0.6;
 
-function scrollLink(event) {
-  event.preventDefault();
-  const href = event.currentTarget.getAttribute("href");
-  const section = document.querySelector(href);
-  section.scrollIntoView({
-    behavior: "smooth",
-    block: "center",
-  });
+  function scroll() {
+    animateScroll.forEach((section) => {
+      const topo = section.getBoundingClientRect().top;
+      const invisibleWindow = topo - tamanhoWindow < 0;
+      if (invisibleWindow) {
+        section.classList.add("ativo");
+      } else {
+        section.classList.add("remove");
+      }
+    });
+  } 
+  scroll()
+  window.addEventListener("scroll", scroll);
 }
-
-arrow.forEach((link) => {
-  link.addEventListener("click", scrollLink);
-});
+activeAnimateScroll();
