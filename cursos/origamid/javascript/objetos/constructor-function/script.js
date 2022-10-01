@@ -44,19 +44,17 @@
 
 function Dom(seletor) {
   const elementos = document.querySelectorAll(seletor);
-  console.log(elementos);
-  this.ativo = function element() {
-    elementos.forEach((item, classe) => {
-      item.classList.add(classe);
+  this.ativo = function (classe) {
+    elementos.forEach((index) => {
+      index.classList.add(classe);
+    });
+  };
+  this.piroca = function (classe) {
+    elementos.forEach((index) => {
+      index.classList.remove(classe);
     });
   };
 }
-
 const li = new Dom("li");
-li.ativo("ativo");
 
-// const lista = new Dom("ul");
-// lista.ativo("ativo");
-
-// const lastLi = new Dom("li:last-child");
-// lastLi.ativo("ativo");
+// li.ativo("ativar");
