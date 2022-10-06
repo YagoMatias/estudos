@@ -31,8 +31,8 @@ function activeAnimateScroll() {
         section.classList.add("remove");
       }
     });
-  } 
-  scroll()
+  }
+  scroll();
   window.addEventListener("scroll", scroll);
 }
 activeAnimateScroll();
