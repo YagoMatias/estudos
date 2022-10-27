@@ -61,7 +61,7 @@ header a:focus {
   box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.486);
 }
 
-.home-background {
+.home-box {
   margin: 10px;
   margin-left: 60px;
   margin-top: 30px;
@@ -109,4 +109,89 @@ header a:focus {
 
 .home-links a:focus {
   border-bottom: 2px solid white;
+}
+
+/* segunda section */
+
+.img-grove {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  /* border: 1px solid red; */
+
+}
+
+.img-grove-box {
+  padding-top: 100px;
+  /* border: 1px solid aqua; */
+} 
+
+/* terceira section */
+
+.intro {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 20px;
+}
+
+.intro-box {
+  width: 600px;
+}
+
+.intro-textos {
+  color: white;
+}
+
+.intro-textos h2 {
+  font-size: 2.5rem;
+  margin: 10px;
+}
+
+.intro-textos p {
+  font-size: 1.3rem;
+  line-height: 30px;
+  margin: 10px;
+}
+
+.img-personagem {
+  display: flex;
+  justify-content: center;
+}
+
+/* quarta section */
+
+.samp {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 20px;
+}
+
+.samp-box {
+  width: 600px;
+}
+
+.samp-textos {
+  color: white;
+}
+
+.samp-textos h2 {
+  font-size: 2.5rem;
+  margin: 10px;
+}
+
+.samp-textos p {
+  font-size: 1.3rem;
+  line-height: 30px;
+  margin: 10px;
+}
+
+.img-online {
+
+}
+
+.img-online-box {
+  width: 600px;
+  height: 600px;
 }
