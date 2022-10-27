@@ -1,6 +1,6 @@
 * {
   margin: 0px;
-  padding: 0px; 
+  padding: 0px;
 }
 
 body {
@@ -24,7 +24,7 @@ li {
   list-style: none;
 }
 
-a {
+nav a {
   display: flex;
   font-size: 20px;
   color: white;
@@ -34,11 +34,37 @@ a {
   border: 2px solid red;
 }
 
-li a:hover {
+header a:hover {
   border-bottom: 2px solid white;
 }
 
-div a:hover {
+header a:focus {
   border-bottom: 2px solid white;
+}
 
+section {
+  border: 2px solid blue;
+  margin: 10px;
+  padding: 10px;
+}
+
+.home-textos h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin: 10px;
+}
+
+.home-textos p {
+  font-size: 1.3rem;
+  color: white;
+  margin: 10px;
+}
+
+.home-links {
+  border: 1px solid aqua;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  margin: 0px;
 }
