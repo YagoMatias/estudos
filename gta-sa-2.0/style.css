@@ -155,8 +155,8 @@ header a:focus {
 }
 
 .img-personagem {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
 }
 
 /* quarta section */
@@ -165,7 +165,7 @@ header a:focus {
   display: grid;
   justify-content: center;
   height: 100vh;
-  margin-top: 20px;
+  margin-top: 160px;
 }
 
 .samp-box {
@@ -192,6 +192,5 @@ header a:focus {
 }
 
 .img-online-box {
-  width: 600px;
-  height: 600px;
+  
 }

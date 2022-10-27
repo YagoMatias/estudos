@@ -1,5 +1,6 @@
 function scrollNav() {
   const arrow = document.querySelectorAll('a[href^="#"');
+  console.log(arrow);
 
   function scrollLink(event) {
     event.preventDefault();
