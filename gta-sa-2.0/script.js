@@ -7,7 +7,7 @@ function scrollSuave() {
     const section = document.querySelector(href);
     section.scrollIntoView({
       behavior: "smooth",
-      block: "center",
+      block: "start",
     });
   }
 
@@ -19,7 +19,7 @@ scrollSuave();
 
 function sectionScroll() {
   const sections = document.querySelectorAll(".js-scroll");
-  const metadeWindow = window.innerHeight * 0.6;
+  const metadeWindow = window.innerHeight * 0.75;
 
   function animaScroll() {
     sections.forEach((section) => {
@@ -30,6 +30,7 @@ function sectionScroll() {
       }
     });
   }
+  animaScroll();
   window.addEventListener("scroll", animaScroll);
 }
 sectionScroll();
