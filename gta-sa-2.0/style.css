@@ -207,11 +207,9 @@ header a:focus {
 .img-online-box {
   display: flex;
   justify-content: space-around;
-
-}
-
-.img-online-box img{
-
+  flex-wrap: wrap;
+  gap: 10px;
+  
 }
 
 /* sexta section */
@@ -269,6 +267,25 @@ header a:focus {
 
 .gta-mais-links a:focus {
   border-bottom: 2px solid white;
+}
+
+/* setima section */
+
+.img-gta-mais {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  /* border: 1px solid limegreen; */
+  margin: 20px;
+}
+
+.img-gta-mais-box {
+  /* border: 1px solid aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
 }
 
  
