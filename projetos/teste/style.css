@@ -9,28 +9,47 @@
   border: 1px solid aqua;
 }
 
-.container .bloco {
-  width: 90%;
-  height: 90%;
-  /* background: yellow; */
-  position: relative;
+/* 
+ */
+
+/* .container .bloco {
   transition: 0.2s linear;
-}
-
-.container .bloco .botao{
-  transition: 0.2s linear;
-}
+} */
 
 
-.container .bloco:hover {
+/* .ativo:hover {
   margin-left: 0;
   margin-top: 0;
   height: 200px;
   width: 400px;
-}
+} */
 
 
 img {
   width: 100%;
   height: 100%;
 }
+
+/* ---------------------------------------------- */
+
+
+
+@keyframes scale-down-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  
+}
+
+.scale-down-center:hover {
+   animation: scale-down-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+

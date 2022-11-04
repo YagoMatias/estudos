@@ -199,3 +199,25 @@ a.arrow {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+/* =============================== */
+
+.imagem {
+  /* width: 90%;
+  height: 90%; */
+  border: 2px solid lime;
+  position: relative;
+  transition: 0.2s linear;
+}
+
+/* .container .bloco {
+  transition: 0.2s linear;
+} */
+
+
+.imagem:hover {
+  margin-left: 0;
+  margin-top: 0;
+  height: 200px;
+  width: 400px;
+}

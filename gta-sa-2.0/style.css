@@ -288,4 +288,33 @@ header a:focus {
   
 }
 
+/* ============================================== */
+
+@keyframes scale-down-center {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes reverse {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.imagem {
+  animation-name: reverse;
+   animation-duration: 0.3s;
+}
+.imagem:hover {
+   animation: scale-down-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
  
