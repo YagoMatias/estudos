@@ -1,49 +1,58 @@
-// function Pessoa(nome, idade) {
+// // function Pessoa(nome, idade) {
+// //   this.nome = nome;
+// //   this.idade = idade;
+// // }
+
+// // const yago = new Pessoa("Yago", 24);
+
+// // console.log(Pessoa.prototype);
+// // console.log(yago.prototype);
+// // --------------------------------------------------------------
+
+// // Crie uma função construtora de Pessoas
+// // Deve conter nome, sobrenome e idade
+// // Crie um método no protótipo que retorne
+// // o nome completo da pessoa
+
+// function Pessoa(nome, sobrenome, idade) {
 //   this.nome = nome;
+//   this.sobrenome = sobrenome;
 //   this.idade = idade;
 // }
 
-// const yago = new Pessoa("Yago", 24);
+// Pessoa.prototype.nomeCompleto = function () {
+//   return `${this.nome} ${this.sobrenome}`;
+// };
 
-// console.log(Pessoa.prototype);
-// console.log(yago.prototype);
-// --------------------------------------------------------------
+// const yago = new Pessoa("Yago", "Matias", 24);
 
-// Crie uma função construtora de Pessoas
-// Deve conter nome, sobrenome e idade
-// Crie um método no protótipo que retorne
-// o nome completo da pessoa
+// // Liste os métodos acessados por
+// // dados criados com NodeList,
+// // HTMLCollection, Document
 
-function Pessoa(nome, sobrenome, idade) {
-  this.nome = nome;
-  this.sobrenome = sobrenome;
-  this.idade = idade;
-}
+// Object.getOwnPropertyNames(NodeList.prototype);
+// Object.getOwnPropertyNames(HTMLCollection.prototype);
+// Object.getOwnPropertyNames(Document.prototype);
 
-Pessoa.prototype.nomeCompleto = function () {
-  return `${this.nome} ${this.sobrenome}`;
-};
+// // Liste os construtores dos dados abaixo
+// const li = document.querySelector("li");
 
-const yago = new Pessoa("Yago", "Matias", 24);
+// li; // HTMLLIElement
+// li.click; // function
+// li.innerText; //string
+// li.value; // number
+// li.hidden; //boolean
+// li.offsetLeft; //number
+// li.click(); // undefied
 
-// Liste os métodos acessados por
-// dados criados com NodeList,
-// HTMLCollection, Document
+// // Qual o construtor do dado abaixo:
+// li.hidden.constructor.name;
 
-Object.getOwnPropertyNames(NodeList.prototype);
-Object.getOwnPropertyNames(HTMLCollection.prototype);
-Object.getOwnPropertyNames(Document.prototype);
+// -----------------------------------------------------------------------
 
-// Liste os construtores dos dados abaixo
-const li = document.querySelector("li");
+const pais = "Brasil";
+const cidade = new String("rio");
 
-li; // HTMLLIElement
-li.click; // function
-li.innerText; //string
-li.value; // number
-li.hidden; //boolean
-li.offsetLeft; //number
-li.click(); // undefied
+const listaAnimais = ["cavalo", "galinha", "pinto"];
 
-// Qual o construtor do dado abaixo:
-li.hidden.constructor.name;
+const lista = document.querySelectorAll("li");
