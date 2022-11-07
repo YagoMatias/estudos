@@ -25,7 +25,7 @@ function sectionScroll() {
   function animaScroll() {
     sections.forEach((section) => {
       const sectionTop = section.getBoundingClientRect().top;
-      const sectionVisible = sectionTop - metadeWindow < 0;
+      const sectionVisible = (sectionTop - metadeWindow) < 0;
       if (sectionVisible) {
         section.classList.add("ativo");
       }
