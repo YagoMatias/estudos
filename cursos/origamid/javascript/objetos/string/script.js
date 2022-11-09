@@ -42,10 +42,10 @@
 
 // listaItem = listaItem.replace(/[,]+/g, ".");
 
-let lista = document.querySelectorAll("li");
+// let lista = document.querySelectorAll("li");
 
-lista.forEach((item) => {
-  let velho = item.innerHTML.split("li");
-  let novo = velho.join("div");
-  console.log(novo);
-});
+// lista.forEach((item) => {
+//   let velho = item.innerHTML.split("li");
+//   let novo = velho.join("div");
+//   console.log(novo);
+// });
