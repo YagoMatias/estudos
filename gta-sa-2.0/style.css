@@ -208,8 +208,7 @@ header a:focus {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 10px;
-  
+  gap: 10px;  
 }
 
 /* sexta section */
