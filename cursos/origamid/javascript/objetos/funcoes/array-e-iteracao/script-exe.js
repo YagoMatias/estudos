@@ -15,18 +15,30 @@
 // html, com os seguintes parâmetros
 // tag, classe e conteudo.
 
-function CriarElemento(tag, textos) {
+// function criarElemento(item, tag, conteudo) {
+//   const pai = document.body.querySelector(item);
+//   const elemento = document.createElement(tag);
+//   pai.appendChild(elemento);
+//   const texto = document.createTextNode(conteudo);
+//   return elemento.appendChild(texto);
+// }
+// criarElemento("section", "div", "oi");
+
+// function addClasse(item, classe) {
+//   const selecionarDiv = document.querySelector(item);
+//   selecionarDiv.classList.add(classe);
+// }
+// addClasse("div", "ativo");
+
+function elementoCria(tag, classe, conteudo) {
   const elemento = document.createElement(tag);
-  const conteudos = document.
-  return elemento.appendChild(conteudos);
+  classe ? elemento.classList.add(classe) : null;
+  conteudo ? (elemento.innerHTML = conteudo) : null;
+  return elemento;
 }
-// console.log(completo);
 
-const div = CriarElemento('div', 'teste');
+console.log(elementoCria("div", "ativo", "olá otários"));
 
-const elementoPai = document.body.querySelector('section');
-elementoPai.appendChild(div); 
-
-  const elemento = document.createElement('div');
-  console.log(elemento);
-
+// Crie uma nova função utilizando a anterior como base
+// essa nova função deverá sempre criar h1 com a
+// classe titulo. Porém o parâmetro conteudo continuará dinâmico
