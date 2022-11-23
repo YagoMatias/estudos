@@ -204,11 +204,16 @@ header a:focus {
   margin: 20px;
 }
 
+/* .img-online-box img {
+  width: 300px;
+  height: 600px;
+} */
+
 .img-online-box {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 10px;  
+  gap: 10px;
 }
 
 /* sexta section */
@@ -233,7 +238,7 @@ header a:focus {
   margin: 10px;
 }
 
-.gta-mais-textos  p {
+.gta-mais-textos p {
   color: white;
   font-size: 1.3rem;
   line-height: 30px;
@@ -274,19 +279,21 @@ header a:focus {
   display: flex;
   justify-content: center;
   height: 100vh;
-  /* border: 1px solid limegreen; */
+  border: 1px solid limegreen;
   margin: 20px;
 }
 
 .img-gta-mais-box {
-  /* border: 1px solid aqua; */
+  border: 1px solid aqua;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
 }
 
+.img-gta-mais-box img {
+  width: 100%;
+}
 /* ============================================== */
 
 @keyframes scale-down-center {
@@ -309,11 +316,8 @@ header a:focus {
 
 .imagem {
   animation-name: reverse;
-   animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 .imagem:hover {
-   animation: scale-down-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-down-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
-
- 
