@@ -128,7 +128,7 @@ header a:focus {
 .img-grove {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  /* max-height: 100vh; */
   /* border: 1px solid red; */
 }
 
