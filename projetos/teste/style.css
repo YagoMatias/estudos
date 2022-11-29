@@ -1,21 +1,9 @@
-
-.caixa1 {
-  width: 300px;
-  height: 300px;
-  border: 1px solid aqua;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
+h1 {
+  cursor: pointer;
 }
-
-.caixa2{
-  width: 280px;
-  height: 100px;
+.ativo {
+  display: inline-block;
+  background-color: blue;
   color: white;
-  border: 1px solid red;  
-
-}
-
-p {
-  text-align: right;
+  cursor: pointer;
 }
