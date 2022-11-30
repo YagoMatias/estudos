@@ -8,4 +8,4 @@ animaScroll();
 zoomImg();
 scrollNav();
 // modal();
-typewriter();
+// typewriter();
