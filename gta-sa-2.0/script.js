@@ -7,5 +7,5 @@ import typewriter from "./modules/typewriter.js";
 animaScroll();
 zoomImg();
 scrollNav();
-modal();
+// modal();
 typewriter();

@@ -1,0 +1,181 @@
+@media (max-width: 600px) {
+  *{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    }
+  button {
+    margin: 20px;
+    padding: 0px;
+    color: white;
+  }   
+  header {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    /* width: 100%; */
+  }
+
+  nav {
+    display: none;
+  }
+
+  .mobile img {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    /* margin-left: 15px; */
+  }
+
+  .img-online-box {
+    display: none;
+  }
+
+  .gta-logo {
+    display: none;
+  }
+  
+  .gta-logo2 {
+    display: none;
+  }
+
+  .home, .intro, .gta-mais, .img-grove, .samp  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid lime; 
+    margin-top: 40px;
+    margin: 20px;
+    /* /* margin-left: 10px; */
+  }
+
+  .home-box, .intro-box, .gta-mais-box, .samp-box {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .img-personagem,  .img-grove-box, .img-gta-mais {
+    display: flex;
+    justify-content: center;
+  }
+
+  .texto-mobile {
+    margin: 30px;
+    padding: 0px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
