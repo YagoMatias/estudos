@@ -1,2 +1,3 @@
-@import './css/geral.css';
-@import './css/mobile.css';
+@import "./css/geral.css";
+@import "./css/mobile.css";
+@import "./dist/hamburgers.css";

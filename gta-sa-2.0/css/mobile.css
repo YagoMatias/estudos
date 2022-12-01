@@ -1,18 +1,32 @@
 @media (max-width: 600px) {
-  *{
+  * {
     margin: 0px;
     padding: 0px;
+    /* background-color: black; */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  html {
     background-color: black;
-    color: white;
-    }
-  button {
-    margin: 30px;
-    padding: 0px;
-    color: white;
-  }   
+  }
+
+  .botao {
+    margin-top: 15px;
+  }
+
+  .modal-conteiner {
+    display: none;
+  }
+
+  .comprar {
+    display: none;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
+    margin: 5px;
     /* border: 1px solid white; */
     /* width: 100%; */
   }
@@ -35,147 +49,156 @@
   .gta-logo {
     display: none;
   }
-  
+
   .gta-logo2 {
     display: none;
   }
+  .home {
+    border: inherit 10px 10px black;
+    background-image: url(/gta-sa-2.0/imagens/los-santos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10px;
+    margin: 0px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.486);
+  }
 
-  .home, .intro, .gta-mais, .img-grove, .samp  {
+  /* .home, */
+  .intro,
+  .gta-mais,
+  .img-grove,
+  .samp {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid lime; 
+    /* border: 1px solid lime; */
     margin-top: 40px;
     margin: 20px;
     /* /* margin-left: 10px; */
   }
 
-  .home-box, .intro-box, .gta-mais-box, .samp-box {
+  .home-box,
+  .intro-box,
+  .gta-mais-box,
+  .samp-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     /* gap: 20px; */
     margin: 0px;
     padding: 0px;
   }
 
-  .img-personagem,  .img-grove-box, .img-gta-mais {
+  .img-personagem,
+  .img-grove-box,
+  .img-gta-mais {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 
   .texto-mobile {
     margin: 30px;
     padding: 0px;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .intro-img img,
+  .samp-img img,
+  .gta-mais-img img {
+    width: 100px;
+  }
+
+  .home-textos h1,
+  .intro-textos h2,
+  .samp-textos h2,
+  .gta-mais-textos h2 {
+    font-size: 1.9rem;
+    color: white;
+  }
+
+  .home-textos p,
+  .intro-textos p,
+  .samp-textos p,
+  .gta-mais-textos > p {
+    font-size: 1rem;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .rodape {
+    font-size: 0.6rem;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .home-links,
+  .gta-mais-links {
+    /* border: 1px solid aqua; */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* margin: 10px 10px 10px 15px; */
+    text-align: center;
+    /* width: 600px; */
+  }
+
+  .home-links a,
+  .gta-mais-links a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 25px 10px 25px 10px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+
+  .home-links a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+  }
+
+  .gta-mais-links a:focus {
+    border-bottom: 2px solid white;
+  }
+
+  .gta-mais-links a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+  }
+
+  .gta-mais-links a:focus {
+    border-bottom: 2px solid white;
+  }
+
+  @keyframes scale-down-center {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes reverse {
+    from {
+      transform: scale(1.05);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .imagem {
+    animation-name: reverse;
+    animation-duration: 0.3s;
+  }
+  .imagem:hover {
+    animation: scale-down-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
 }
