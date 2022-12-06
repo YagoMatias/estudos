@@ -1,3 +1,4 @@
-@import "./css/geral.css";
+@import "./css/desktop.css";
 @import "./css/mobile.css";
 @import "./dist/hamburgers.css";
+@import "./css/menu-mobile.css";

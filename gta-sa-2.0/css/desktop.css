@@ -65,6 +65,10 @@
     border-bottom: 2px solid white;
   }
 
+  .menu-mobile {
+    /* display: none; */
+  }
+
   /* primeira section */
 
   .home {
