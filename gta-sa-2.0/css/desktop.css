@@ -73,7 +73,7 @@
 
   .home {
     border: inherit 10px 10px black;
-    background-image: url(/gta-sa-2.0/imagens/los-santos.png);
+    background-image: url(../imagens/losSantos.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
