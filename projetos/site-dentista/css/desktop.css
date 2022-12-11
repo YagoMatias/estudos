@@ -75,29 +75,36 @@ a:focus {
 }
 
 /* ==================================================================== */
+/* ========================SECTION PREVENTIVOS======================================= */
 
 .preventivos {
   display: flex;
   align-items: center;
-  height: 28rem;
   background-color: #4867d6;
   margin-top: -6px;
+  padding: 2rem;
 }
 
 .preventivos-box {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   margin: 10px 100px 10px 100px;
   color: white;
   gap: 3rem;
 }
 .preventivos h1 {
+  width: 22rem;
+  height: 16rem;
   font-size: 4rem;
 }
 
 .preventivos ul {
-  margin: 0px 50px 0px 50px;
+  width: 10rem;
+  height: 21rem;
+  /* margin: 0px 50px 0px 50px; */
 }
 
 .preventivos li {
@@ -114,10 +121,12 @@ a:focus {
   line-height: 1.7rem;
   margin-top: 0.5rem;
   text-align: justify;
+  width: 25rem;
+  height: 20rem;
 }
 
 .preventivos-box div a {
-  display: inline-block;
+  display: block;
   text-align: center;
   font-weight: 800;
   background-color: white;
@@ -131,4 +140,88 @@ a:focus {
   background-color: #4867d6;
   color: white;
   border: 1px solid white;
+}
+
+/* ============================================================================ */
+/* ============================= SECTION ESCOLHER =============================== */
+
+.escolher {
+  display: flex;
+  height: 60rem;
+}
+
+.escolher-box {
+  background-color: #4867d6;
+  width: 27rem;
+  height: 50rem;
+  margin-top: 5rem;
+  margin-right: 15rem;
+}
+
+.escolher-img {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 5rem;
+  left: -15rem;
+}
+
+.escolher-img img {
+  width: 55rem;
+  height: 35rem;
+}
+
+.escolher-texto {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background-color: white;
+  width: 45rem;
+  height: 25rem;
+  position: relative;
+  top: 25rem;
+  left: 7rem;
+  color: white;
+}
+
+.escolher-texto div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.escolher-texto h2 {
+  color: black;
+  font-size: 2.4rem;
+  margin: 1rem 1rem;
+}
+
+.escolher-texto p {
+  font-size: 1.3rem;
+  margin: 1rem 1rem;
+  color: gray;
+}
+
+.escolher-texto a {
+  display: inline-block;
+  margin: 1rem 1rem;
+  padding: 0.7rem 5rem;
+  text-align: center;
+  font-weight: 800;
+  background-color: #4867d6;
+  color: white;
+}
+
+.escolher-texto a:hover {
+  font-weight: 800;
+  background-color: white;
+  color: #4867d6;
+  border: 1px solid #4867d6;
+}
+
+@media (max-width: 1000px) {
+  .escolher {
+    background-color: lime;
+  }
 }
