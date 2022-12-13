@@ -225,3 +225,23 @@ a:focus {
     background-color: lime;
   }
 }
+/* ======================================================================= */
+/* ===========================SERVIÇOS======================================= */
+
+.servicos-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.servicos-box div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid black;
+}
