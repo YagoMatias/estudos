@@ -1,25 +1,27 @@
-const menu = document.querySelector(".menu");
-const menuConteiner = document.querySelector(".menu-conteiner");
-const botao = document.querySelector('button')
-console.log(botao);
+const dropdownMenus = document.querySelectorAll(".hamburger");
+dropdownMenus.forEach((menu) => {
+  ["touchstart", "click"].forEach((userEvent) => {
+    menu.addEventListener(userEvent, handleClick);
+  });
+});
 
-function classNav(event) {
+function handleClick(event) {
+  const menuMobile = document.querySelector(".menu-conteiner");
   event.preventDefault();
-  menu.classList.toggle("ativo");
-}
-function classHamburguer(event) {
-  event.preventDefault();
-  console.log('oi');
-  botao.classList.toggle('is-active');
-}
-
-function classConteiner(event) {
-  event.preventDefault();
-  console.log('oi');
-  menuConteiner.classList.toggle('ativo');
+  menuMobile.classList.toggle("ativo");
+  this.classList.toggle("is-active");
+  outsideClick(this, () => {
+    this.classList.remove("is-active");
+    menuMobile.classList.remove("ativo");
+  });
 }
 
-
-botao.addEventListener('click', classNav);
-botao.addEventListener('click', classHamburguer);
-botao.addEventListener('click', classConteiner);
+function outsideClick(element, callBack) {
+  const html = document.documentElement;
+  html.addEventListener("click", handleOutsideClick);
+  function handleOutsideClick(event) {
+    if (!element.contains(event.target)) {
+      callBack();
+    }
+  }
+}

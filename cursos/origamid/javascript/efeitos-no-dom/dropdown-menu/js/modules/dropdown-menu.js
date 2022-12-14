@@ -8,9 +8,9 @@ dropdownMenus.forEach((menu) => {
 
 function handleClick(event) {
   event.preventDefault();
-  this.classList.toggle("active");
+  this.classList.add("active");
   outsideClick(this, () => {
-    console.log("ativou");
+    this.classList.remove("active");
   });
 }
 
@@ -18,7 +18,8 @@ function outsideClick(element, callBack) {
   const html = document.documentElement;
   html.addEventListener("click", handleOutsideClick);
   function handleOutsideClick(event) {
-    console.log(element);
-    callBack();
+    if (!element.contains(event.target)) {
+      callBack();
+    }
   }
 }
