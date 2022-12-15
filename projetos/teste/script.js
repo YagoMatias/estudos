@@ -25,3 +25,30 @@ function outsideClick(element, callBack) {
     }
   }
 }
+
+var countms = 0;
+
+var teste;
+
+var counterms = function () {
+  teste = setInterval(function () {
+    countms = countms + 1;
+    var id_label_ms = document.getElementById("count_label_ms");
+    id_label_ms.innerHTML = countms / 100 + " s";
+  }, 1);
+};
+
+function start() {
+  counterms();
+}
+
+function stop() {
+  clearInterval(teste);
+}
+
+function reset() {
+  clearInterval(teste);
+
+  var id_label_ms = document.getElementById("count_label_ms");
+  id_label_ms.innerHTML = 0;
+}

@@ -1,0 +1,18 @@
+body {
+  background-color: red;
+}
+
+body.azul {
+  background-color: blue;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: aliceblue;
+  width: 5rem;
+  height: 5rem;
+  margin: 2rem;
+}
