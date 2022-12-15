@@ -51,7 +51,7 @@ let i = 0;
 iniciar = 0;
 const cronometro = function () {
   iniciar = setInterval(() => {
-    merda.innerText = i++;
+    tempo.innerText = i++;
   }, 100);
 };
 
