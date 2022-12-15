@@ -28,18 +28,20 @@
 // // Coloca a nova string(que é o HTML) no DOM
 // $wrapper.innerHTML = HTMLTemporario;
 
-// function play() {
-//   pauseButton.classList.remove("ativo");
-//   const inicio = setInterval(callBack, 1000);
-//   let i = 0;
-//   function callBack() {
-//     console.log(i++);
-//     function stop() {
-//       clearInterval(inicio);
-//     }
-//     pauseButton.addEventListener("click", stop);
-//   }
-// }
+function play() {
+  pauseButton.classList.remove("ativo");
+  const inicio = setInterval(callBack, 1000);
+  let i = 0;
+  function callBack() {
+    console.log(i++);
+    function stop() {
+      clearInterval(inicio);
+    }
+    pauseButton.addEventListener("click", stop);
+  }
+}
+
+play();
 
 // playButton.addEventListener("click", play);
 
