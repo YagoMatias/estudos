@@ -51,6 +51,7 @@ let i = 0;
 iniciar = 0;
 const cronometro = function () {
   iniciar = setInterval(() => {
+    playButton.setAttribute('disabled', '');
     tempo.innerText = i++;
   }, 100);
 };
@@ -61,6 +62,7 @@ function start() {
 
 function stop() {
   clearInterval(iniciar);
+  playButton.removeAttribute('disabled', '');
 }
 
 function reset() {
