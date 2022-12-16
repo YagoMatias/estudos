@@ -148,13 +148,13 @@ a:focus {
 .escolher {
   display: flex;
   /* height: 60rem; */
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
 }
 
 .escolher-box {
   background-color: #4867d6;
   width: 27rem;
-  /* height: 50rem; */
+  height: 50rem;
   margin-top: 5rem;
   margin-right: 15rem;
 }
@@ -264,65 +264,85 @@ a:focus {
 }
 /* ======================================================================= */
 /* ===========================SERVIÇOS======================================= */
+.titulo-servicos {
+  text-align: center;
+  color: gray;
+}
+
+.servicos {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  min-height: 100vh;
+  background: white;
+}
 
 .servicos-conteiner {
-  margin-top: 10rem;
-  padding: 0rem;
-  gap: 1rem;
-}
-
-.servicos-box {
-  background-image: linear-gradient(to right,#4867D6,#4B6ADB, #4F70E8, #425EC2);
+  position: relative;
+  max-width: 100%;
   display: grid;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin: 40px;
   grid-auto-flow: dense;
-  padding: 3rem 0rem;
-  gap: 10px;
-}
-
-.servicos-box div {
   background-color: white;
-  border-radius: 5%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  width: 15rem;
-  height: 15rem;
-  margin: 1rem 1rem 1rem 4rem;
-  padding: 2rem;
+  grid-gap: 10px;
 }
 
-.servicos-box div.quatro > img, .cinco > img, .seis > img {
-  width: 6rem;
-  height: 6rem;
+.servicos-conteiner .box {
+  background-color: #567AFC;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+  margin: 0px;
 }
 
-@media (max-width: 1000px) {
-  /* .servicos-box div {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: auto;
-    height: auto;
-    margin: 1rem 1rem 1rem 4rem;
-    padding: 2rem;
-  } */
+.servicos-conteiner .box {
+  /* background-color: black; */
+}
 
-  .servicos-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+.servicos-conteiner .box:hover {
+  background-color: white;
+}
+
+.servicos-conteiner .box p {
+  /* width: 20rem; */
+}
+
+.servicos-conteiner .box img {
+  position: relative;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.servicos-conteiner .box:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
 
-.imagem {
-  width: 100rem;
+.servicos-conteiner .box:nth-child(2) {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-color: #A2B6FD;
+  
 }
+
+.servicos-conteiner .box:nth-child(4) {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-color: #3351be;
+
+}
+
+.servicos-conteiner .box:nth-child(5) {
+  grid-column: span 3;
+  grid-row: span 1;
+  background-color: #4461C9;
+}
+
+
+
