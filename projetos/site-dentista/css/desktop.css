@@ -354,11 +354,47 @@ a:focus {
 /* ====================================== SECTION SOBRE======================================== */
 
 .sobre-conteiner {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .sobre-conteiner img {
-  width: 40rem;
-  height: 27rem;
-  margin: 2rem;
+  position: relative;
+  width: 35rem;
+  height: 55rem;
 }
 
+.sobre-box {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid lime; */
+}
+
+.sobre-box > h2 {
+  background-image: url(../imagens/post-it.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.062);
+  padding: 3rem 1rem;
+  max-width: 11rem;
+  z-index: 200;
+  position: relative;
+  top: 6rem;
+}
+
+.sobre-box p {
+  background-color: #2d50cf;
+  color: white;
+  border-radius: 2%;
+  padding: 5rem;
+  margin: 3rem;
+  position: relative;
+  max-width: 30rem;
+  box-shadow: inset 2px 2px 28px 1px rgb(0 0 0 / 49%);
+}
+
+.sobre-box.missao p{
+  background-color: #4867d6;
+
+}
