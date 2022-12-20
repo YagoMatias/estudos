@@ -406,20 +406,80 @@ a:focus {
 
 .contatos-conteiner {
   background-color: #4867d6;
-  height: 10rem;
+  height: 30rem;
   margin-top: 10rem;
-  padding: 10rem;
+  padding: 3rem;
+}
+
+.contatos-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10rem;
+}
+.contatos-box h2 {
+  color: white;
+  font-size: 3rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+.contatos-box img {
+ width: 34px;
+ height: 34px;
+ margin: 1.5rem;
+}
+
+.contatos-box p {
+  color: white;
+  font-size: 2rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.contatos-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
 }
 
 input {
   border: 0px;
+  outline: none;
   background-color: transparent;
-  box-shadow: 0px 4px 0px 0px black;
+  box-shadow: 0px 1px 0px 0px white;
+  color: white;
+  font-size: 1.3rem;
+  width: 20rem;
 }
 
 input:focus {
   border: 0px;
   outline: none;
   background-color: transparent;
-  box-shadow: 0px 4px 0px 0px black;
+  box-shadow: 0px 1px 0px 0px white;
+}
+
+
+#nome::-webkit-input-placeholder, 
+#email::-webkit-input-placeholder, 
+#mensagem::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.459);
+  font-size: 1rem;
+}
+
+#mensagem {
+  margin-top: 4rem;
+}
+
+button {
+  border: 0;
+  background-color: white;
+
 }
