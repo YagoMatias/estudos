@@ -240,8 +240,8 @@ a:focus {
   }
 
   .escolher-img img {
-    width: 40rem;
-    height: 27rem;
+    max-width: 40rem;
+    max-height: 27rem;
   }
 
   .escolher-texto {
@@ -290,6 +290,7 @@ a:focus {
 }
 
 .servicos-conteiner .box {
+  max-width: 1550px;
   background-color: #2c51d4;
   padding: 20px;
   display: grid;
@@ -366,7 +367,7 @@ a:focus {
 .sobre-box.missao {
   position: relative;
   background-color: #3855be;
-  width: 50rem;
+  max-width: 50rem;
   height: 22rem;
   top: 0rem;
   left: 13.5rem;
@@ -388,7 +389,7 @@ a:focus {
   top: 5rem;
   left: -10rem;
   background-color: white;
-  width: 50rem;
+  max-width: 50rem;
   height: 22rem;
   padding: 2rem;
 }
