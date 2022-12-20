@@ -408,7 +408,7 @@ a:focus {
 /* ===================================SECTION CONTATOS=============================================== */
 
 .contatos-conteiner {
-  background-color: #4867d6;
+  background-color: rgb(50, 82, 197);
   height: 35rem;
   margin-top: 10rem;
   padding: 3rem;
