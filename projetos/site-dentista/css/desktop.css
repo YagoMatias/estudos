@@ -402,3 +402,24 @@ a:focus {
 }
 
 /* ================================================================================================= */
+/* ===================================SECTION CONTATOS=============================================== */
+
+.contatos-conteiner {
+  background-color: #4867d6;
+  height: 10rem;
+  margin-top: 10rem;
+  padding: 10rem;
+}
+
+input {
+  border: 0px;
+  background-color: transparent;
+  box-shadow: 0px 4px 0px 0px black;
+}
+
+input:focus {
+  border: 0px;
+  outline: none;
+  background-color: transparent;
+  box-shadow: 0px 4px 0px 0px black;
+}
