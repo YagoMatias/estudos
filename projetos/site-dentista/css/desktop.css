@@ -222,7 +222,7 @@ a:focus {
   border: 1px solid #4867d6;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1290px) {
   .escolher-box {
     background-color: #4867d6;
     width: 17rem;
@@ -301,16 +301,8 @@ a:focus {
   margin: 0px;
 }
 
-.servicos-conteiner .box {
-  /* background-color: black; */
-}
-
 .servicos-conteiner .box:hover {
   background-color: #a2b6fd;
-}
-
-.servicos-conteiner .box p {
-  /* width: 20rem; */
 }
 
 .servicos-conteiner .box img {
@@ -367,11 +359,25 @@ a:focus {
 .sobre-box.missao {
   position: relative;
   background-color: #3855be;
-  max-width: 50rem;
+  width: 50rem;
   height: 22rem;
   top: 0rem;
   left: 13.5rem;
   padding: 2rem;
+  border: 2px solid lime;
+}
+
+@media (max-width: 1290px) {
+  .sobre-box.missao {
+    position: relative;
+    background-color: #3855be;
+    width: 40rem;
+    height: 18rem;
+    top: 0rem;
+    left: 3.5rem;
+    padding: 2rem;
+    border: 2px solid lime;
+  }
 }
 .sobre-box.valores {
   margin-top: 5rem;
