@@ -1,36 +1,31 @@
-html {
-  background-color: black;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+.banner,
+h1,
+button {
+  transition: 0.6s;
 }
 
-h1 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.6rem;
-}
-
-span {
-  color: goldenrod;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-
-.numeros-conteiner {
+.banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background: url("../gta-sa/gta/imagens/grovebg.png");
+  background-size: 100%;
+  background-position: center;
+  transition: 0.5s;
 }
 
-.numeros-box {
-  display: grid;
-  grid-column: 2 / 4;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10rem;
-  margin-top: 3rem;
+.banner h1 {
+  color: #f9f9f9;
+}
+
+.banner button {
+  padding: 12px 36px;
+  border-radius: 50px;
+  border: 0;
+  background: #221e6f;
+  color: #f9f9f9;
 }
