@@ -1,0 +1,37 @@
+* {
+  background-color: black;
+}
+
+.dado {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  gap: 5rem;
+  height: 50%vh;
+  margin: 1rem;
+}
+
+.quadrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 15rem;
+  height: 15rem;
+  color: black;
+}
+
+p {
+  background-color: white;
+  font-size: 5rem;
+}
+
+button {
+  background-color: white;
+  cursor: pointer;
+}
+
+.dado1 {
+  display: none;
+}
